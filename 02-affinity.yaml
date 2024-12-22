@@ -16,11 +16,11 @@ spec:
         - matchExpressions:
           - key: hardware
             operator: In
-            values: -gpu
-    containers:
-  # docker run -d --name nginx nginx
+  containers:
+   # docker run -d --name nginx nginx
   - name: nginx
-    image: nginx:stable-perl
+    image: nginx:stable-perl          values: -gpu
+    
   # nodeSelector:
   #   hardware: gpu
   tolerations:
